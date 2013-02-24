@@ -41,15 +41,14 @@ In general then, you'd write two plugins with the following names:
 * awssum-&lt;provider&gt; - e.g. awssum-amazon, awssum-twitter
 * awssum-&lt;provider&gt;-&lt;service&gt; - e.g. awssum-amazon-s3, twitter-twitter
 
-For other examples, you might write awssum-openstack and awssum-openstack-nova
+For other examples, you might write ```awssum-openstack``` and ```awssum-openstack-nova```.
 
 This is good if in the future you want to write a new service for a provider, you only have to write the plugin for the
 new service. e.g. awssum-amazon-dynamodb, awssum-openstack-keystone.
 
 Please also note to use ```peerDependencies``` in your ```package.json``` and depend on the correct version of
-AwsSum. Your ```awssum-&lt;provider&gt;``` package should peer depend on AwsSum and your
-```awssum-&lt;provider&gt;-&lt;service&gt;``` package should peer depend on your ```awssum-&lt;provider&gt;```
-package. I hope this makes sense. :)
+AwsSum. Your ```awssum-<provider>``` package should peer depend on AwsSum and your ```awssum-<provider>-<service>```
+package should peer depend on your ```awssum-<provider>``` package. I hope this makes sense. :)
 
 # Author #
 
