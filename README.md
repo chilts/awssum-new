@@ -23,9 +23,9 @@ package is now the infrastructure which all other plugins can use.
 
 If you have written a plugin for AwsSum, please fork this repo and add it here (in alphabetical order):
 
-* (Amazon)[https://github.com/awssum/awssum-amazon]
-    * (DynamoDB)[https://github.com/awssum/awssum-amazon-dynamodb]
-    * (S3)[https://github.com/awssum/awssum-amazon-s3]
+* [Amazon](https://github.com/awssum/awssum-amazon)
+    * [DynamoDB](https://github.com/awssum/awssum-amazon-dynamodb)
+    * [S3](https://github.com/awssum/awssum-amazon-s3)
 
 (Note: currently, the new version of AwsSum is under development so this list will be filled out once AwsSum v1 is
 complete.)
