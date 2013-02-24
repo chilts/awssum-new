@@ -19,6 +19,12 @@ IRC : Come and say hello in #awssum on Freenode. :)
 The initial version of AwsSum was a large install which carried many providers and services. Instead, the 'awssum'
 package is now the infrastructure which all other plugins can use.
 
+## Usage ##
+
+To use AwsSum, you need to install an AwsSum plugin for the service you wish to provide (see the following
+list). Please follow the documentation for that plugin to be able to use the service. This package is for other
+developers to use, not for end-users. :)
+
 ## Existing Plugins ##
 
 If you have written a plugin for AwsSum, please fork this repo and add it here (in alphabetical order):
@@ -41,10 +47,13 @@ In general then, you'd write two plugins with the following names:
 * awssum-&lt;provider&gt; - e.g. awssum-amazon, awssum-twitter
 * awssum-&lt;provider&gt;-&lt;service&gt; - e.g. awssum-amazon-s3, twitter-twitter
 
-For other examples, you might write ```awssum-openstack``` and ```awssum-openstack-nova```.
+For other examples, you might write ```awssum-openstack```, ```awssum-openstack-nova``` and
+```awssum-openstack-ketstone```.
 
 This is good if in the future you want to write a new service for a provider, you only have to write the plugin for the
-new service. e.g. awssum-amazon-dynamodb, awssum-openstack-keystone.
+new service. e.g. ```awssum-openstack-swift```.
+
+### peerDependencies ###
 
 Please also note to use ```peerDependencies``` in your ```package.json``` and depend on the correct version of
 AwsSum. Your ```awssum-<provider>``` package should peer depend on AwsSum and your ```awssum-<provider>-<service>```
