@@ -1,41 +1,44 @@
 {
-    "name": "awssum",
-    "description": "NodeJS module to aid talking to Web Service APIs. Requires plugins.",
-    "version": "1.0.0",
-    "author": {
-        "name":"Andrew Chilton",
-        "email":"chilts@appsattic.com",
-        "url":"http://www.chilts.org/"
+    "name" : "awssum",
+    "description" : "NodeJS module to aid talking to Web Service APIs. Requires plugins.",
+    "version" : "1.0.0",
+
+    "main" : "awssum.js",
+    "engines" : {
+        "node" : ">= 0.6.0"
     },
-    "homepage": "https://awssum.io/",
-    "contributors": [],
-    "devDependencies": {
-        "tap": "0.4.x"
+    "devDependencies" : {
+        "tap" : "0.4.x"
     },
-    "dependencies": {
-        "underscore": "1.4.x",
-        "xml2js": "0.2.x"
+    "dependencies" : {
+        "underscore" : "1.4.x",
+        "xml2js" : "0.2.x"
     },
-    "main": "awssum.js",
-    "engines": {
-        "node": ">= 0.6.0"
-    },
-    "repository": {
-        "type" : "git",
-        "url": "git://github.com/awssum/awssum.git"
-    },
-   "bugs" : {
-        "url" : "http://github.com/awssum/awssum/issues",
-        "mail" : "chilts@appsattic.com"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://github.com/appsattic/node-awssum/raw/master/LICENSE"
-    }],
-    "keywords": [
-        "api", "apis", "webapi", "client"
-    ],
     "scripts" : {
         "test" : "tap test/*.js"
-    }
+    },
+
+    "homepage" : "https://awssum.io/",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/awssum/awssum.git"
+    },
+    "bugs" : {
+        "url" : "http://github.com/awssum/awssum/issues",
+        "mail" : "andychilton@gmail.com"
+    },
+
+    "author" : {
+        "name" : "Andrew Chilton",
+        "email" : "andychilton@gmail.com",
+        "url" : "http://chilts.org/"
+    },
+    "contributors" : [],
+    "licenses" : [{
+        "type" : "MIT",
+        "url" : "http://github.com/appsattic/node-awssum/raw/master/LICENSE"
+    }],
+    "keywords" : [
+        "api", "apis", "webapi", "client"
+    ]
 }
